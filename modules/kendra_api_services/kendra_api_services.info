@@ -1,0 +1,8 @@
+core = "7.x"
+dependencies[] = "services"
+description = "Services configuration for Kendra API"
+features[ctools][] = "services:services:3"
+features[services_endpoint][] = "saracen"
+name = "Kendra API Services"
+package = "Features"
+php = "5.2.4"

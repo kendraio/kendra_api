@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * Code for the Kendra API Services feature.
+ */
+
+include_once('kendra_api_services.features.inc');
+include_once('kendra_api_services.resources.inc');
+
+function _kapi_default_callback() {
+	return "Kendra API default callback";
+}
+
+/**
+ * Implementation of hook_services_resources().
+ */
+function kendra_api_services_services_resources() {
+	$resources = kendra_api_services_services_get_mappings();
+	return $resources;
+}
