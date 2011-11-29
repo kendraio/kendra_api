@@ -9,8 +9,8 @@
 function kendra_api_services_default_services_endpoint() {
 	$export = array();
 
-	$kendra_api_services_endpoint_name = variable_get('KENDRA_SOCIAL_SERVICES_ENDPOINT_NAME', 'api');
-	$kendra_api_services_endpoint_prefix = variable_get('KENDRA_SOCIAL_SERVICES_ENDPOINT_PREFIX', 'api/0.1');
+	$kendra_api_services_endpoint_name = variable_get('KENDRA_API_ENDPOINT_NAME', 'api');
+	$kendra_api_services_endpoint_prefix = variable_get('KENDRA_API_ENDPOINT_PREFIX', 'api/0.1');
 
 	$endpoint = new stdClass;
 	$endpoint->disabled = FALSE; /* Edit this to true to make a default endpoint disabled initially */

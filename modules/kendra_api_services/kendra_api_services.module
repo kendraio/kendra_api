@@ -7,8 +7,14 @@
 include_once('kendra_api_services.features.inc');
 include_once('kendra_api_services.resources.inc');
 
-function _kapi_default_callback() {
-	return "Kendra API default callback";
+
+/**
+ * Provide a default callback for a resource which doesn't define one
+ *
+ * @return string
+ */
+function _kapi_default_callback($funcname = 'undefined') {
+	return sprintf(t("No callback has been defined for this controller. [%s]"),$funcname);
 }
 
 /**
