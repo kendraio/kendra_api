@@ -13,32 +13,8 @@ function kendra_api_services_services_get_mappings() {
 	$allow_callback_reassignment = FALSE;
 	$res_type = 'endpoints';
 	$res_operations = array(
-    'create' => array(
-		'file' => array('type' => 'inc', 'module' => 'kendra_api_services', 'name' => 'kendra_api_services.callbacks'),
-	'access arguments' => array('access content'),
-        'callback' => '_kapi_do_api_create',
-        'enabled' => 1,
-	),
-    'retrieve' => array(
-		'file' => array('type' => 'inc', 'module' => 'kendra_api_services', 'name' => 'kendra_api_services.callbacks'),
-	'access arguments' => array('access content'),
-        'callback' => '_kapi_do_api_retrieve',
-        'enabled' => 1,
-	),
-    'update' => array(
-		'file' => array('type' => 'inc', 'module' => 'kendra_api_services', 'name' => 'kendra_api_services.callbacks'),
-	'access arguments' => array('access content'),
-        'callback' => '_kapi_do_api_update',
-        'enabled' => 1,
-	),
-    'delete' => array(
-		'file' => array('type' => 'inc', 'module' => 'kendra_api_services', 'name' => 'kendra_api_services.callbacks'),
-	'access arguments' => array('access content'),
-        'callback' => '_kapi_do_api_delete',
-        'enabled' => 1,
-	),
 	/**
-	 * index -- THIS ONE WORKS AS EXPECTED
+	 * index
 	 */
     'index' => array(
 		'file' => array('type' => 'inc', 'module' => 'kendra_api_services', 'name' => 'kendra_api_services.callbacks'),
@@ -58,6 +34,66 @@ function kendra_api_services_services_get_mappings() {
 	),
 			'access callback' => '_kapi_default_access_callback',
 			'access arguments' => array('index'),
+			'access arguments append' => TRUE,
+	),
+	/**
+	 * create
+	 */
+    'create' => array(
+		'file' => array('type' => 'inc', 'module' => 'kendra_api_services', 'name' => 'kendra_api_services.callbacks'),
+		'access arguments' => array('access content'),
+	        'callback' => '_kapi_do_api_create',
+	        'enabled' => 1,
+	        'help' => 'Create an endpoint definition',
+	        'args' => array(
+	),
+			'access callback' => '_kapi_default_access_callback',
+			'access arguments' => array('create'),
+			'access arguments append' => TRUE,
+	),
+	/**
+	 * retrieve
+	 */
+    'retrieve' => array(
+		'file' => array('type' => 'inc', 'module' => 'kendra_api_services', 'name' => 'kendra_api_services.callbacks'),
+		'access arguments' => array('access content'),
+	        'callback' => '_kapi_do_api_retrieve',
+	        'enabled' => 1,
+	        'help' => 'Retrieve an endpoint definition',
+	        'args' => array(
+	),
+			'access callback' => '_kapi_default_access_callback',
+			'access arguments' => array('retrieve'),
+			'access arguments append' => TRUE,
+	),
+	/**
+	 * update
+	 */
+    'update' => array(
+		'file' => array('type' => 'inc', 'module' => 'kendra_api_services', 'name' => 'kendra_api_services.callbacks'),
+		'access arguments' => array('access content'),
+	        'callback' => '_kapi_do_api_update',
+	        'enabled' => 1,
+	        'help' => 'Update an endpoint definition',
+	        'args' => array(
+	),
+			'access callback' => '_kapi_default_access_callback',
+			'access arguments' => array('update'),
+			'access arguments append' => TRUE,
+	),
+	/**
+	 * delete
+	 */
+    'delete' => array(
+		'file' => array('type' => 'inc', 'module' => 'kendra_api_services', 'name' => 'kendra_api_services.callbacks'),
+		'access arguments' => array('access content'),
+	        'callback' => '_kapi_do_api_delete',
+	        'enabled' => 1,
+	        'help' => 'delete an endpoint definition',
+	        'args' => array(
+	),
+			'access callback' => '_kapi_default_access_callback',
+			'access arguments' => array('delete'),
 			'access arguments append' => TRUE,
 	),
 	);
