@@ -10,7 +10,7 @@ Employing a RESTful communications pattern utilizing HTTP methods for CRUD and i
 
 Kendra API aims to implement basic features of the [OpenSocial 2.0 API and Data Specifications](http://docs.opensocial.org/display/OSD/Specs) (Core API Server, Core Data, Social API Server, Social Data). Core data types defined by these specifications include “People”, “Groups”, “MediaItems”, and “Albums” in addition to the complementary support for the “ActivityEntry” data type from the Activity Streams specification which was added in the version 2.0 of the Social Data specification.
 
-Kendra API is free software developed by Kendra Foundation in collaboration with SARACEN and co-funded by the European Union. Sample code and the validation tool will be released under the GNU General Public License. Additionally, Kendra will Creative Commons license all of the API documentation, so users will be welcome to reuse and remix as appropriate.
+Kendra API is free software developed by Kendra Foundation in collaboration with SARACEN and co-funded by the European Union under the Seventh Framework programme. Sample code and the validation tool will be released under the GNU General Public License. Additionally, Kendra will Creative Commons license all of the API documentation, so users will be welcome to reuse and remix as appropriate.
 
 ## Conventions
 
