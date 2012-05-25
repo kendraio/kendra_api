@@ -12,4 +12,4 @@ api = 2
 core = 7.x
 projects[drupal][type] = core
 
-projects[services][version] = 3.x
+projects[services][version] = 3.x-dev
