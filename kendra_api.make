@@ -13,3 +13,4 @@ core = 7.x
 projects[drupal][type] = core
 
 projects[services][version] = 3.x-dev
+projects[services][subdir] = contrib
