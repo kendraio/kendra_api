@@ -12,5 +12,5 @@ api = 2
 core = 7.x
 projects[drupal][type] = core
 
-projects[services][version] = 3.x-dev
+projects[services][version] = 3.2
 projects[services][subdir] = contrib
